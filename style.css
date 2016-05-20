@@ -1,43 +1,27 @@
-/*Reset CSS*/
 * {
 	margin: 0;
 	padding: 0;
 }
 
-/*Style base*/
 img {
 	border: none;
 	vertical-align: middle;
 }
 
-body {
-	font-family: "Times New Roman";
-}
-ul {
-	list-style: none;
-}
 #page {
 	margin: 0px auto;
 	width: 100%;
 	background-color: #f2f2f2;
-   /* padding: 0;
-    margin-left: auto;
-    margin-right: auto;*/
 }
-
-/*custom for class = "top" */
 #top {
 	width: 100%;
-	height: 40px;
-	background-color: #0f75bc;
+	height: 30px;
+	background-color: #0066cc;
 }
 
 #top a {
 	text-decoration: none;
 }
-
-/*Left*/
-
 .tleft ul{
 	float:left;
 	padding-top: 7px;
@@ -61,9 +45,6 @@ ul {
 .tleft ul li a:hover{
 	color: red;
 }
-/*Right*/
-
-
 .tright ul {
 	float: right;
 	margin-top: 5px;
@@ -125,38 +106,18 @@ float: right;
 .mright ul li a:hover{
 	color: #0000FF;
 }
-/*Style for sub-menu*/
-.sub-menu {
-	display: none;
- 	position: absolute;
- 	background-image: url('../images/background-sub.png');
-    /*min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;*/
-}
-.sub-menu img{
-	float: left;
-}
-.sub-menu ul {
-	float: right;
-}
-.sub-menu li {
-	/*display: none;*/
-	margin-right: 0 !important;
-}
 #menu li{
 	position: relative;
 }
 #menu li:hover .sub-menu{
 	display: block;
 }
-/*Banner*/
 #baner{
 	clear: both;
 	width: 100%;
 	height: 100px;
 	margin-bottom: 20px;
-	background-image: url('../images/baner.png');
+	background-color: #4fa7f1;
 	background-size: 100%;
 }
 
@@ -164,22 +125,16 @@ float: right;
 	float: left;
 	margin-top: 25px;
 }
-
-.bleft p {
-	font-size: 30px;
-	color: #ffffff;
+.bleft h1{
+	color: antiquewhite;
 }
-.bright {
+.bright li{
+	display: inline;
 	float: right;
 	margin-top: 35px;
 }
-.bright a{
-	font-size: 15px;
-	text-decoration: none;
-	color: #ffffff;
-}
-.bright a:hover{
-	color:#0000FF;
+.bright p{
+	color: white;
 }
 /*Begin Main*/
 .main {
@@ -200,10 +155,6 @@ float: right;
 .titlepost {
 	color: #0f75bc;
 	font-size: 25px;
-}
-
-#option{
-
 }
 .oleft{
 	float: left;
@@ -226,18 +177,19 @@ float: right;
 .oright ul li{
 	display: inline;
 }
-.recommend{
+.post{
 	clear:both;
 }
-.recommend ul{
+.post ul{
 	margin-top:20px;
 	margin-bottom: 40px;
 }
 
-.recommend ul li{
+.post ul li{
+	list-style-type: square;
 	padding-bottom:5px;
 }
-.recommend a{
+.post a{
 	text-decoration: none;
 	color: #888888;
 }
@@ -262,86 +214,75 @@ float: right;
 .share p img{
 	padding-right: 5px;
 }
-
+.share li{
+	display: inline;
+}
 #listpost {
-	padding-left: 20px;
 	float: right;
 	width: 25%;
 	background: #ffffff;
-	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 25px;
 	padding-bottom: 0px;
 
 }
-.panelHeading {
+.title {
 	font-size: 20px;
 }
 
-.panelLeft{
+#listpost img{
 	float:left;
 }
-.panelRight{
+#listpost .listdetail{
 	float:right;
-	width: 80%;
+	width: 90%;
 }
-.panelRight a{
+.listdetail a{
 	text-decoration: none;
 	color: #272727;
 	font-size: 13px;
 	font-weight: bold;
 	margin-bottom: 5px;
 }
-.panelContent{
-	margin-top: 20px;
-	padding-bottom: 20px;
-	border-bottom: dotted 1px #cdcdcd;
-	overflow: auto;
-	clear: both;
-}
-.timenews{
+.time{
 	font-size: 12px;
 	color: #cdcdcd;
 }
 #footer {
 	margin-top: 160px;*/
 }
-/*End Main*/
-#footer1{
+#footer1 {
 	background-color: #ffffff;
 	height: 150px;
+}
+#footer1 li{
+	display: inline;
 
 }
 #footer1 img{
 	padding-right: 30px;
 	padding-top: 30px;
+	padding-left: 35px;
 }
+
 #footer2{
-	background-color: #f89502;
-	height: 15px;
-}
-#footer3{
 	background-color: #0f75bc;
 	height: 200px;
 }
-.f3Left {
+.fleft {
 	float: left;
 	margin-left: 10px;
 	margin-top: 30px;
 }
-.f3Left p{
-	color: #dddddd;
-	padding-bottom: 10px;
-}
 
-.pfirst{
+.first{
 	font-size: 18px;
 }
-.psecond{
+.second{
 	font-size: 12px;
 }
 
-#info1 ul li {
+.information ul li {
 	display: inline;
 	font-size: 10px;
 	color: #5eb1fa;
@@ -349,24 +290,28 @@ float: right;
 	padding-right: 15px;
 	padding-left: 15px;
 }
-#info1 ul li .lithird{
+.information ul li .lithird{
 	border: none;
 }
 
-#info2 {
+.contact li{
+	display: inline;
+	font-size: 10px;
+	color: #5eb1fa;
+	border-right: dotted 1px #5eb1fa;
+	padding-right: 15px;
+	padding-left: 15px;
 	margin-top: 20px;
 }
-#info2 img{
+.contact img{
 	padding-right: 15px;
 }
 
-.f3Right {
+#footer2 .fright img{
 	float:right;
 	margin-left: 20px;
 }
-.f3Right img{
-	width: 100%;
-}
+
 
 
 
